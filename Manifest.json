@@ -1,0 +1,19 @@
+{
+	"manifest_version": 2,
+
+	"name": "Github Issue Finder",
+	"description": "This extension will Find Issue similar to required issues",
+	"version": "1.0",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+
+	"browser_action": 
+	{
+		"default_icon": "github.png",
+		"default_popup": "landing.html"
+	},
+	"permissions": ["activeTab"],
+	"web_accessible_resources": [
+		"data/*.json"
+	]
+
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GitBug</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="searching.js"></script>
+<style>
+h1{
+text-align: center;
+	
+}
+body {
+    font-family: Arial;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+form.searchbar input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+form.searchbar button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+}
+
+form.searchbar button:hover {
+    background: #0b7dda;
+}
+
+form.searchbar::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+</style>
+
+
+<body>
+	<div class="container">
+	<h1>GitBug</h1>
+
+	<p><b>Paste your issue</b></p>
+	<form class="searchbar" style="margin:auto;max-width:600px">
+	  <input type="text" placeholder="Search.." name="search" id="info">
+	  <button  id='myButton'><i class="fa fa-search"></i></button>
+	</form>
+	<p id='display'></p>
+</div>
+
+
+</body>
+</html>
