@@ -4,12 +4,13 @@
 	"name": "Github Issue Finder",
 	"description": "This extension will Find Issue similar to required issues",
 	"version": "1.0",
-	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'; default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-inline' 'unsafe-eval' default-src 'self' data: gap: https://fonts.gstatic.com 'unsafe-inline' 'unsafe-eval' default-src 'self' data: gap: https://netdna.bootstrapcdn.com 'unsafe-inline' 'unsafe-eval'",
+
 
 	"browser_action": 
 	{
 		"default_icon": "github.png",
-		"default_popup": "landing.html"
+		"default_popup": "index.html"
 	},
 	"permissions": ["activeTab"],
 	"web_accessible_resources": [
