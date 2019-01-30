@@ -150,7 +150,7 @@ options.add_argument("--disable-notifications")
 driver = webdriver.Chrome(r"C:\Users\Shubham\Downloads\chromedriver.exe",chrome_options=options)
 f=open("github.txt",'w',encoding="utf-8")
 usr="shubham.rsangle@gmail.com"
-pwd ="cs16b026"
+pwd =""
 login(driver,usr,pwd)
 url='https://github.com/'
 search="software engineering"
